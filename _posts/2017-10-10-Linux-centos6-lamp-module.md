@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "实验：在CentOS6.9一台主机上实现基于源码编译安装LAMP(php模块方式)的wordpress应用"
+title:  "实验：在CentOS6.9上编译安装LAMP(php模块方式)"
 date:   2017-10-10 23:40:10 +0700
 categories: [linux, lamp，centos6]
 ---
