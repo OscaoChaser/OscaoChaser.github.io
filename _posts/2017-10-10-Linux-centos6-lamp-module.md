@@ -10,19 +10,20 @@ categories: [linux, lamp，centos6]
 >注：缓存加速xcache支持旧版本的PHP，新版本不适用。
 
 ## 第一步：环境准备
-		apr-1.6.2.tar.gz
-		apr-util-1.6.0.tar.gz      
-		httpd-2.4.27.tar.bz2
-		mariadb-5.5.57-linux-x86_64.tar.gz            
-		php-5.6.31.tar.xz 
-		wordpress-4.8-zh_CN.tar.gz           
-		xcache-3.2.0.tar.bz2
-		一台模拟服务器的centos6主机
+	apr-1.6.2.tar.gz
+	apr-util-1.6.0.tar.gz      
+	httpd-2.4.27.tar.bz2
+	mariadb-5.5.57-linux-x86_64.tar.gz            
+	php-5.6.31.tar.xz 
+	wordpress-4.8-zh_CN.tar.gz           
+	xcache-3.2.0.tar.bz2
+	一台模拟服务器的centos6主机
 
 ## 第二步：源码编译httpd2.4
 ### （1）安装编译环境包组和包
-`yum groupinstall "development tools"
-yum install openssl-devel pcre-devel expat-devel`
+`yum groupinstall "development tools"`
+`yum install openssl-devel pcre-devel expat-devel`
+
 ### （2）解压源码包
 	`tar xvf apr-1.6.2.tar.gz `
 	`tar xvf apr-util-1.6.0.tar.gz`
