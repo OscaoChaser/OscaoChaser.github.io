@@ -21,8 +21,8 @@ categories: [linux, lamp，centos6]
 
 ## 第二步：源码编译httpd2.4
 ### （1）安装编译环境包组和包
-	`yum groupinstall "development tools"`
-	`yum install openssl-devel pcre-devel expat-devel`
+`yum groupinstall "development tools"
+yum install openssl-devel pcre-devel expat-devel`
 ### （2）解压源码包
 	`tar xvf apr-1.6.2.tar.gz `
 	`tar xvf apr-util-1.6.0.tar.gz`
