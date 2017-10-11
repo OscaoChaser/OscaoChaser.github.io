@@ -1,43 +1,32 @@
+
 # Site settings
-title: Everything is a file
-description: '欢迎来到我的个人Blog，在这里你可以看到我个人的学习历程'
-url: 'http://www.oscao.kim'
-baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+title: Project-Gaia
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/JekyllTheme-ProjectGaia" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 
-author:
-  name: 'Oscao Chaser'
-  email: 406082341@qq.com
-  twitter_username: 
-  facebook_username: 
-  github_username:  OscaoChaser
-  linkedin_username:  
+# User setting
+owner:
+email:
+facebook_username:
+twitter_username:
+github_username:
+address:
+  - line:
+  - line:
+  # Feel free to add more lines here 
+telephone:
+copyright:
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+# API settings
+google_api_key:
 
 # Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
+gems: [jekyll-paginate]
+
 markdown: kramdown
-highlighter: rouge
-
-sass:
-    sass_dir: _sass
-    style: compressed
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+# toc_levels: 1..2

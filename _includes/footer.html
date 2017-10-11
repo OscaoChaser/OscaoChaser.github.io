@@ -1,17 +1,38 @@
-<footer class="footer">
-  <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</span>
-</footer>
+<footer class="mt-5 pt-5">
+  <div class="container w-100 font-weight-bold">
+    <div class="row">
+      <div class="col-md-6">
+        <strong>Credits</strong>
+        <table class="table table-sm">
+          <tr>
+            <td>Main Director:</td>
+            <td><a href="szhshp.org">Szhshp</a></td>
+          </tr>
+          <tr>
+            <td>Dev Engine:</td>
+            <td>Ruby x Jekyll</td>
+          </tr>
+            <tr>
+              <td>Vi Director:</td>
+              <td>Bootstrap</td>
+            </tr>
+            <tr>
+              <td>Co-Vi Director</td>
+              <td>Stylish Portfolio</td>
+            </tr>
+          </table>
+          <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
+        </div>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/js/main.js?{{site.time | date: '%s%N'}}"></script>
-{% if site.google_analytics and jekyll.environment != "development" %}
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <div class="col-md-6">
+          <strong>Friend Links</strong>
+          <table class="table table-sm">
+            <tr>
+              <td><a href="http://szhshp.org"> szhshp.org</a></td>
+            </tr>
+          </table>
+        </div>
 
-  ga('create', '{{ site.google_analytics }}', 'auto');
-  ga('send', 'pageview');
-</script>
-{% endif %}
+      </div>
+    </div>  
+  </footer>
