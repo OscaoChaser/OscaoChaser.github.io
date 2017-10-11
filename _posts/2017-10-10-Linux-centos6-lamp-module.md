@@ -43,16 +43,16 @@ redirect_from:
 	[root@centos6 app]$cp -r apr-util-1.6.0 httpd-2.4.27/srclib/apr-util
 	[root@centos6 app]$cd httpd-2.4.27/
 	[root@centos6 httpd-2.4.27]$./configure \
-	\>--prefix=/app/httpd24 \  
-	\>--enable-so  \
-	\>--enable-ssl \ 
-	\>--enable-rewrite \ 
-	\>--with-zlib \
-	\>--with-pcre  \
-	\>--with-included-apr \  
-	\>--enable-modules=most \  
-	\>--enable-mpms-shared=all \ 
-	\>--with-mpm=prefork  
+	>--prefix=/app/httpd24 \  
+	>--enable-so  \
+	>--enable-ssl \ 
+	>--enable-rewrite \ 
+	>--with-zlib \
+	>--with-pcre  \
+	>--with-included-apr \  
+	>--enable-modules=most \  
+	>--enable-mpms-shared=all \ 
+	>--with-mpm=prefork  
 	[root@centos6 httpd-2.4.27]$make -j 4 && make install
 {% endhighlight %}
 
@@ -169,22 +169,22 @@ redirect_from:
 	[root@centos6 app]$tar xvf php-5.6.31.tar.xz 
 	[root@centos6 app]cd php-5.6.31	
 	[root@centos6 php-5.6.31]./configure --prefix=/app/php \
-	\>--with-apxs2=/app/httpd24/bin/apxs \#该项指定php作为httpd24的一个模块工作
-	\>--with-mysql=/usr/local/mysql  \#指定要连接的mysql位置
-	\>--with-mysqli=/usr/local/mysql/bin/mysql_config  \#指定链接数据库接口文件的位置 
-	\>--with-openssl \
-	\>--enable-mbstring \
-	\>--with-png-dir \
-	\>--with-jpeg-dir \
-	\>--with-freetype-dir \
-	\>--with-zlib \
-	\>--with-libxml-dir=/usr \
-	\>--enable-xml \
-	\>--enable-sockets \
-	\>--with-mcrypt \
-	\>--with-config-file-path=/etc \
-	\>--with-config-file-scan-dir=/etc/php.d\ 
-	\>-with-bz2
+	>--with-apxs2=/app/httpd24/bin/apxs \ #该项指定php作为httpd24的一个模块工作
+	>--with-mysql=/usr/local/mysql  \ #指定要连接的mysql位置
+	>--with-mysqli=/usr/local/mysql/bin/mysql_config  \ #指定链接数据库接口文件的位置 
+	>--with-openssl \
+	>--enable-mbstring \
+	>--with-png-dir \
+	>--with-jpeg-dir \
+	>--with-freetype-dir \
+	>--with-zlib \
+	>--with-libxml-dir=/usr \
+	>--enable-xml \
+	>--enable-sockets \
+	>--with-mcrypt \
+	>--with-config-file-path=/etc \
+	>--with-config-file-scan-dir=/etc/php.d \ 
+	>-with-bz2
 	[root@centos6 php-5.6.31]$make -j 4 && make install
 {% endhighlight %}
 
