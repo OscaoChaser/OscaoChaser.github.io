@@ -1,55 +1,27 @@
-title: 一切皆文件
-description: Welcome to My Personal Blog!
-author: OscaoChaser
-github: https://github.com/OscaoChaser
-about: 目前正在深度学习linux系统及其应用，这里记录了我的学习历程。
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
-avatar_url: /static/img/avatar.jpg
+# Plugins
+gems:             ['jekyll-paginate', 'jekyll-gist', 'jekyll-github-metadata']
 
-enableTags: true
-tagarray: []
+# Dependencies
+highlighter:      rouge
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
+# Permalinks
+permalink:        pretty
 
-social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "https://twitter.com/agusmakmun6"
-    - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/summonagus"
-    - icon: fa-stack-exchange
-      link: "#"
-    - icon: fa-github
-      link: "https://github.com/agusmakmun"
+# Setup
+title:            BlackDoc
+tagline:          Black Theme for Jekyll
+description:      "A two-column black theme with a scrolling sidebar. Ideal for sites requiring a master-detail layout, e.g. documentation, cheatsheets, lyrics, notes..."
+url:              https://github.com/karloespiritu/blackdoc
+baseurl:          /
 
-share:
-  twitter_username: agusmakmun6
-  fb_appid: 1749788565247320
+author:
+  name:           'Karlo Espiritu'
+  url:            https://twitter.com/karloespiritu
 
-urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
-    - text: XML Feed
-      url: /feed.xml
+paginate:         5
 
-url: "https://agusmakmun.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
-markdown: kramdown
-gems:
-  - jekyll-paginate
-  - jekyll-gist
+# Custom vars
+version:          1.0.1
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
+github:
+  repo:           https://github.com/karloespiritu/blackdoc
