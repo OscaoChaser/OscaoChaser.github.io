@@ -178,12 +178,12 @@ redirect_from:
 	>--with-jpeg-dir \
 	>--with-freetype-dir \
 	>--with-zlib \
-	>--with-libxml-dir=/usr \
+	>--with-libxml-dir=/usr/ \
 	>--enable-xml \
 	>--enable-sockets \
 	>--with-mcrypt \
-	>--with-config-file-path=/etc \
-	>--with-config-file-scan-dir=/etc/php.d \ 
+	>--with-config-file-path=/etc/ \
+	>--with-config-file-scan-dir=/etc/php.d/ \ 
 	>-with-bz2
 	[root@centos6 php-5.6.31]$make -j 4 && make install
 {% endhighlight %}
