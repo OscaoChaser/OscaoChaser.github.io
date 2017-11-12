@@ -2,8 +2,8 @@
 layout: post
 title: "Varnish的学习和总结(第一部分)"
 description: "最近在学习varnish，就对自己的学习笔记进行了整理和分类，以便后来的复习和强化"
-categories: [centos6,service]
-tags: [linux,lamp,wordpress]
+categories: [centos6,centos7,service]
+tags: [linux,varnish]
 redirect_from:
   - /2017/11/05/
 ---
