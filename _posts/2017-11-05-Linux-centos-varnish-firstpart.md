@@ -11,7 +11,7 @@ redirect_from:
 
 ### 1.简单的网站架构 ###
 
-在了解varnish之前，我们首先要搞清楚明白为什么需要用到反向代理服务器（缓存服务器），以及哪种架构会用到缓存服务器。下面是一个简单的网站架构：
+在了解varnish之前，我们首先要搞清楚明白为什么需要用到缓存服务器，以及哪种架构会用到缓存服务器。下面是一个简单的网站架构：
 <center>
 <img src="http://oy4e0m51m.bkt.clouddn.com/网站简单架构.jpg" width="600px"/>
 </center>
@@ -81,7 +81,7 @@ Cache-Control:max-age=315360000
 
 ## 二、Varnish介绍
 
-Varnish 是一款高性能且开源的反向代理服务器和 HTTP 加速器，其采用全新的软件体系机构，和现在的硬件体系紧密配合，与传统的 squid 相比，varnish 具有性能更高、速度更快、管理更加方便等诸多优点，很多大型的网站都开始尝试使用 varnish 来替换 squid，这些都促进 varnish 迅速发展起来。挪威的最大的在线报纸 Verdens Gang(vg.no) 使用 3 台 Varnish 代替了原来的 12 台 Squid，性能比以前更好，这是 Varnish 最成功的应用案例。
+Varnish 是一款高性能且开源的反向代理服务器和 HTTP 加速器，其采用全新的软件体系机构，和现在的硬件体系紧密配合，与传统的 squid 相比，varnish 具有性能更高、速度更快、管理更加方便等诸多优点，很多大型的网站都开始尝试使用 varnish 来替换 squid，这些都促进 varnish 迅速发展起来。挪威的最大的在线报纸 Verdens Gang(vg.no) 使用 3 台 Varnish 代替了原来的 12 台 Squid，性能比以前更好，这是 Varnish 最成功的应用案例。但是，其实现在大部分使用的是Varnish基于内存的缓存功能，而一般不会将其作为反向代理服务器，要想做反向代理的,Niginx和HAproxy完全就可以实现了。
 
 ### 1.Varnish的程序架构 ###
 
