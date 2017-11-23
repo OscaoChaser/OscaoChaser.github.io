@@ -206,6 +206,7 @@ https://github.com/magro/memcached-session-manager/wiki/SetupAndConfiguration
 - 使用的协议简单，文本协议和二进制协议两种。
 - 预先分块存储，有效避免了内存碎片对服务性能的影响。
 
+#### 2.缺点
 - 数据储存在内存，一旦宕机，数据就会丢失，需要做集群。
 - 无法实现数据长久存储，即存储在磁盘上，这点不如Redis。
 - 其K/V存储只支持存储可流式化数据（可序列化数据）。

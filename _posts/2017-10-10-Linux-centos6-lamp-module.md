@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "实验：在CentOS6.9上编译安装LAMP(php模块方式)"
+title: "编译实现LAMP(php模块方式)"
 description: "编译安装LAMP，并在其基础上实现WordPress以及加速."
 categories: [centos6,service]
 tags: [linux,lamp,wordpress]
