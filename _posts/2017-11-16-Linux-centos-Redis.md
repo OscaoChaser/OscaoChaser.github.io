@@ -154,7 +154,7 @@ Last login: Sat Nov 18 16:28:11 2017 from 172.18.65.108
 
 #### 2.实验步骤
 
-####第一步，配置主节点
+#### 第一步，配置主节点
 
 {% highlight javascript linenos=table %}
 #配置主节点相关信息
@@ -448,7 +448,7 @@ redis-sen 3435 redis    5u  IPv4  44967      0t0  TCP *:26379 (LISTEN)
 
 {% endhighlight %}
 
-####　第三步，模拟主节点失败，查看转移情况
+#### 第三步，模拟主节点失败，查看转移情况
 
 {% highlight javascript linenos=table %}
 ＃关闭主节点，模拟失败
@@ -586,7 +586,8 @@ redis-sen 3435 redis    5u  IPv4  44967      0t0  TCP *:26379 (LISTEN)
 
 {% endhighlight %}
 
-####　第四步，修复失败的节点，重新上线
+#### 第四步，修复失败的节点，重新上线
+
 {% highlight javascript linenos=table %}
 #修改node1的redis配置文件
 [root@node1 ~]# vim /etc/redis.conf
