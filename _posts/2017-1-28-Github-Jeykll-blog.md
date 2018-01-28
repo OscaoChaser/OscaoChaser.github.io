@@ -100,9 +100,9 @@ Ruby的下载网址为:[http://railsinstaller.org/en](http://railsinstaller.org/
 </Center>
 2，在命令行界面进行以下操作
  {% highlight javascript linenos=table %}
-$ ruby -version  #查看一下ruby是否安装
+$ ruby -version  #第一步，查看一下ruby是否安装
 ruby 2.3.3p222 (2016-11-21 revision 56859) [i386-mingw32]
-$ bundle install #安装Jekyll环境，这个过程很慢，耐心等待
+$ bundle install #第二步，安装Jekyll环境，这个过程很慢，耐心等待
 Fetching gem metadata from https://rubygems.org/...........
 Fetching version metadata from https://rubygems.org/..
 Fetching dependency metadata from https://rubygems.org/.
@@ -169,7 +169,36 @@ Use `bundle info [gemname]` to see where a bundled gem is installed.
 我们需要进入到目录:\OscaoChaser.github.io，然后右键`git
  bash here`进入gitbash界面，进行如下操作:
 {% highlight javascript linenos=table %}
+40608@DESKTOP-CO13QEM MINGW64 /c/OscaoChaser.github.io (master)
+$ git add * #第一步，添加更改的内容到暂存区
+The following paths are ignored by one of your .gitignore files:
+_site
+Use -f if you really want to add them.
+
+40608@DESKTOP-CO13QEM MINGW64 /c/OscaoChaser.github.io (master)
+$ git commit -m "修改了博客" #第二步，提交自己的改动到HEAD
+[master 80abc23] 修改了博客
+ 1 file changed, 175 insertions(+)
+ create mode 100644 _posts/2017-1-28-Github-Jeykll-blog.md
+
+40608@DESKTOP-CO13QEM MINGW64 /c/OscaoChaser.github.io (master)
+$ git push origin master #第三步，提交自己的改动到仓库
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.43 KiB | 3.43 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:OscaoChaser/OscaoChaser.github.io.git
+   deca5b9..80abc23  master -> master
 
 {% endhighlight %}
+
+4，访问我们的网站，查看博客是否已经完成上传
+<Center>
+<img src="http://oy4e0m51m.bkt.clouddn.com/%E6%BC%94%E7%A4%BA%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D.gif" width="900px"/>
+</Center>
+
+可以看到，我们已经成功搭建并修改了我们的博客网站。
 
 
